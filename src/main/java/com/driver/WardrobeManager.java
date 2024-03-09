@@ -9,16 +9,15 @@ public class WardrobeManager {
     private Deque<String> wardrobe = new LinkedList<>();
 
     public void addCloth(String cloth) {
-       // your code goes here
+        wardrobe.addLast(cloth);
     }
 
     public String retrieveCloth() {
-    	//your code goes here
         return wardrobe.pollFirst();
     }
 
     public void displayClothes() {
-        // your code goes here
+        System.out.println("Clothes in Wardrobe: " + wardrobe);
     }
 
     public static void main(String[] args) {
